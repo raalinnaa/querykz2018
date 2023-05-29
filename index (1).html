@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery/jquery.js"></script>
+    <link rel="stylesheet" href="jquery/jquery.mobile-1.4.5.css">
+    <script src="jquery/jquery.mobile-1.4.5.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+
+
+
+<div data-role="page" class="ui-body-a" id="welcome">
+     <img id="logo" src="img/logo1.png" height="366" width="928"/>
+    <a href="#regist" class="ui-btn" id="rb">Зарегистрироваться</a>
+    <a href="#come" class="ui-btn" id="ue">Войти</a>
+
+
+    <img id="diss" src="img/discuss.png" height="831" width="1920"/>
+</div>
+
+
+
+
+
+
+
+
+<div data-role="page" class="ui-body-a" id="regist">
+
+      <h1 id="logr">Регистрация</h1>
+      <input type="text" placeholder="имя" id="name">
+      <input type="text" placeholder="фамилия" id="sur">
+       <input type="text" placeholder="возраст" id="years">
+    <select name="class" id="cityy" data-placeholder="Выберите город">
+        <option value="class">Выберите город</option>
+        <option value="class">Астана</option>
+        <option value="class">Алматы</option>
+        <option value="class">Актау</option>
+        <option value="class">Актобе</option>
+        <option value="class">Атырау</option>
+        <option value="class">Байконур</option>
+        <option value="class">Караганда</option>
+        <option value="class">Кокшетау</option>
+        <option value="class">Павлодар</option>
+        <option value="class">Петропавловск</option>
+        <option value="class">Семей</option>
+        <option value="class">Тараз</option>
+        <option value="class">Уральск</option>
+        <option value="class">Усть-Каменогорск</option>
+        <option value="class">Шымкент</option>
+    </select>
+
+
+
+    <select name="class" id="pol" data-placeholder="Выберите пол">
+            <option value="class">Выберите пол</option>
+        <option value="class">Мужской</option>
+        <option value="class">Женский</option>
+    </select>
+         <a href="#avtor" class="ui-btn" id="butav">Перейти к авторизации</a>
+    <img id="diss1" src="img/discuss.png" height="831" width="1920"/>
+</div>
+
+
+
+
+
+
+
+
+
+<div data-role="page" class="ui-body-a" id="avtor">
+    <h1 id="avvv">Авторизация</h1>
+    <div style="margin-top: 90px; width:360px;">
+    <input type="text" placeholder="Введите номер телефона" style="border: 0.5px black solid; height: 40px;">
+      <input type="text" placeholder="Придумайте пароль" style="border: 0.5px black solid; ; height: 40px;">
+        <a href="#mainpage" class="ui-btn" id="goto">Войти</a>
+    </div>
+    <img id="diss1" src="img/discuss.png" height="831" width="1920"/>
+</div>
+
+
+
+
+
+
+
+
+<div data-role="page" class="ui-body-a" id="come">
+   <h1 id="dp">Вход</h1>
+    <p id="vsd">Введите свои данные</p>
+    <div style="margin-top: 10px; width:360px;">
+        <input type="text" placeholder="Номер телефона" style="border: 0.5px black solid; height: 40px;">
+        <input type="text" placeholder="Пароль" style="border: 0.5px black solid; ; height: 40px;">
+        <a href="#mainpage" class="ui-btn" id="bbb">Войти</a>
+    <img id="diss1" src="img/discuss.png" height="831" width="1920"/></div>
+</div>
+
+
+
+<div data-role="page" class="ui-body-b" id="mainpage">
+    <div data-role="header">
+        <h1>QueryKZ</h1>
+    </div>
+
+    <div data-role="header" style="position: absolute; bottom: 0; width: 100%; height: 45px;">
+        <div style="display: flex; justify-content: space-around; flex-direction: row; align-items: center;">
+        <a href="#ppppp"  class="ui-btn ui-icon-info ui-btn-icon-left"></a>
+        <a href="#create"  class="ui-btn ui-icon-plus ui-btn-icon-left"></a>
+        <a href="#mainpage"  class="ui-btn ui-icon-home ui-btn-icon-left"></a>
+        <a href="#chat" class="ui-btn ui-icon-comment ui-btn-icon-left"></a>
+            <a href="#myprofile" id="user" class="ui-btn ui-icon-user ui-btn-icon-left"></a>
+        </div>
+    </div>
+    <form id="search">
+            <input data-type="search" id="filterControlgroup-input">
+    </form>
+    <div data-role="controlgroup" data-filter="true" data-input="#filterControlgroup-input" style="width: 100%; display: flex; justify-content: center; ">
+    </div>
+
+    <select name="class" id="kategory" data-placeholder="Выбрать категорию">
+        <option value="class">Выбрать категорию</option>
+        <option value="class">Встречи</option>
+        <option value="class">Здоровье и красота</option>
+        <option value="class">Бизнес</option>
+        <option value="class">Кино и сериалы</option>
+        <option value="class">Музыка</option>
+        <option value="class">Хобби</option>
+        <option value="class">Туризм</option>
+        <option value="class">Кулинария</option>
+        <option value="class">Психология</option>
+        <option value="class">Купи-продай</option>
+
+    </select>
+
+
+</div>
+
+
+
+<div  data-role="page" id="chat">
+
+
+    <a href="#eeexit" data-rel="popup" class="ui-btn ui-icon-back ui-btn-icon-left"></a>
+
+    <div data-role="popup" id="eeexit" role="main">
+        <h4>Подтвердите действие</h4>
+        <a href="#main" class="ui-btn">Выйти</a>
+        <a href="#chat" class="ui-btn">Отмена</a>
+    </div>
+
+    <div role="main">
+        <ul data-role="listview" id="list">
+        </ul>
+    </div>
+    <div id="form" class="ui-bar-inherit">
+        <input type="text" placeholder="Сообщения" id="msg" maxlength="100">
+        <input type="button" id="send" value="Ok">
+        >
+
+    </div>
+
+    <div data-role="header" style="position: absolute; bottom: 0; width: 100%; height: 45px;">
+        <div style="display: flex; justify-content: space-around; flex-direction: row; align-items: center;">
+            <a href="#ppppp" id="help" class="ui-btn ui-icon-info ui-btn-icon-left"></a>
+            <a href="#create" id="plus" class="ui-btn ui-icon-plus ui-btn-icon-left"></a>
+            <a href="#mainpage" id="home" class="ui-btn ui-icon-home ui-btn-icon-left"></a>
+            <a href="#chat" id="message" class="ui-btn ui-icon-comment ui-btn-icon-left"></a>
+            <a href="#myprofile" id="user" class="ui-btn ui-icon-user ui-btn-icon-left"></a>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+    <div data-role="page" id="myprofile" class="ui-body-b">
+        <div data-role="header">
+            <h1>My profile</h1>
+        </div>
+        <div data-role="header" style="position: absolute; bottom: 0; width: 100%; height: 45px;">
+            <div style="display: flex; justify-content: space-around; flex-direction: row; align-items: center;">
+                <a href="#ppppp" id="help" class="ui-btn ui-icon-info ui-btn-icon-left"></a>
+                <a href="#create" id="plus" class="ui-btn ui-icon-plus ui-btn-icon-left"></a>
+                <a href="#mainpage" id="home" class="ui-btn ui-icon-home ui-btn-icon-left"></a>
+                <a href="#chat" id="message" class="ui-btn ui-icon-comment ui-btn-icon-left"></a>
+                <a href="#myprofile" id="user" class="ui-btn ui-icon-user ui-btn-icon-left"></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div data-role="page" class="ui-body-b" id="create">
+    <h1 style="margin-left: 10px; margin-top: 20px;">Создание форума</h1>
+    <input type="text" placeholder="Тема форума">
+    <input type="text" placeholder="Описание" id="inf" maxlength="100" style="height: 100px;">
+    <input type="text" placeholder="Возраст">
+    <select name="class" id="city" data-placeholder="Выберите город">
+        <option value="class">Выберите город</option>
+        <option value="class">Астана</option>
+        <option value="class">Алматы</option>
+        <option value="class">Актау</option>
+        <option value="class">Актобе</option>
+        <option value="class">Атырау</option>
+        <option value="class">Байконур</option>
+        <option value="class">Караганда</option>
+        <option value="class">Кокшетау</option>
+        <option value="class">Павлодар</option>
+        <option value="class">Петропавловск</option>
+        <option value="class">Семей</option>
+        <option value="class">Тараз</option>
+        <option value="class">Уральск</option>
+        <option value="class">Усть-Каменогорск</option>
+        <option value="class">Шымкент</option>
+    </select>
+    <select name="class" id="kategory" data-placeholder="Выберите категорию">
+        <option value="class">Выберите категорию</option>
+        <option value="class">Встречи</option>
+        <option value="class">Здоровье и красота</option>
+        <option value="class">Бизнес</option>
+        <option value="class">Кино и сериалы</option>
+        <option value="class">Музыка</option>
+        <option value="class">Знакомства</option>
+        <option value="class">Хобби</option>
+        <option value="class">Туризм</option>
+        <option value="class">Кулинария</option>
+        <option value="class">Психология</option>
+    </select>
+
+    <a href="#mainpage" data-rel="popup" class="ui-btn">Cоздать форум</a>
+
+    <div data-role="popup" id="eeexit" role="main" class="ui-body-a">
+        <h4>Ваш форум создан!</h4>
+            <a href="#mainpage" class="ui-btn">Ок</a>
+
+    </div>
+    <div data-role="header" style="position: absolute; bottom: 0; width: 100%; height: 45px;">
+        <div style="display: flex; justify-content: space-around; flex-direction: row; align-items: center;">
+            <a href="#ppppp" id="a" class="ui-btn ui-icon-plus ui-btn-icon-left"></a>
+            <a href="#mainpage" id="b" class="ui-btn ui-icon-home ui-btn-icon-left"></a>
+            <a href="#chat" id="message" class="ui-btn ui-icon-comment ui-btn-icon-left"></a>
+            <a href="#myprofile" id="user" class="ui-btn ui-icon-user ui-btn-icon-left"></a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div id="ppppp" data-role="page" class="ui-body-b">
+    <h1 style="margin-left: 20px">Настройки</h1>
+
+
+
+    <div data-role="header" style="position: absolute; bottom: 0; width: 100%; height: 45px;">
+        <div style="display: flex; justify-content: space-around; flex-direction: row; align-items: center;">
+            <a href="#ppppp" id="a" class="ui-btn ui-icon-info ui-btn-icon-center"></a>
+            <a href="#create" id="b" class="ui-btn ui-icon-plus ui-btn-icon-left"></a>
+            <a href="#mainpage" id="c" class="ui-btn ui-icon-home ui-btn-icon-left"></a>
+            <a href="#chat" id="d" class="ui-btn ui-icon-comment ui-btn-icon-left"></a>
+            <a href="#myprofile" id="e" class="ui-btn ui-icon-user ui-btn-icon-left"></a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</body>
+</html>

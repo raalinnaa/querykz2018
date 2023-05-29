@@ -1,0 +1,126 @@
+#welk {
+    font-family: "Century Schoolbook";
+    font-size: 25pt;
+    margin-top: 48%;
+    margin-left: 3.5%;
+    justify-content: center;
+
+}
+#diss1 {
+    top: 400px;
+    width: 100%;
+    height: 165px;
+    position: fixed;
+    opacity: 0.8;
+}
+#welcome {
+    background-image: url("img/lll.jpg");
+}
+#regist {
+    background-image: url("img/lll.jpg");
+}
+#recent{
+    display: flex;
+    justify-content: space-around;
+}
+#recent a.ui-btn{
+    width: 50%;
+}
+
+#header{
+    height: 50px;
+}
+
+#slider {
+    overflow: hidden;
+    height: 550px;
+    width: 360px;
+    margin: 0px auto 0 auto;
+    background: #000;
+    position: relative;
+}
+#list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 9999px;
+    transition: left .1s ease-out;
+    font-size: 0;
+}
+.slide {
+    display: inline-block;
+    height: inherit;
+    width: 360px;
+    font-size: 20px;
+}
+.slide:nth-child(1) {
+    background: orange;
+}
+.slide:nth-child(2) {
+    background: green;
+}
+
+
+
+
+#rb {
+    margin-top: 420px;
+    height: 40px;
+     font-size: 15pt;
+    color:#66503e ;
+}
+#vsd {
+    margin-top: 90px;
+    font-size: large;
+    margin-left: 15px;
+}
+#dp {
+    font-size: xx-large;
+    margin-left: 20px;
+    margin-top: 30px;
+
+}
+#mpt{
+    color: #d0d0d0;
+}
+
+.ui-input-text.ui-body-inherit.ui-corner-all.ui-shadow-inset {
+	width: 80%;
+	margin: 4%;
+}
+#diss {
+    width: 100%;
+    height: 165px;
+    position: fixed;
+    top: 255px;
+    opacity: 0.8;
+}
+#logo {
+    width: 380px;
+    height: 250px;
+    position: fixed;
+    top: 10px;
+    margin-left: -25px;
+}
+#ue {
+    height: 30px;
+    background-color: #66503e;
+    color: white;
+}
+#name {
+    border: black 0.5px solid ;
+}
+#sur{
+    border: black 0.5px solid ;
+}
+#years { border: black 0.5px solid ;
+}
+#city {
+    border: black 0.5px solid ;
+}
+#pol {
+    border: black 0.5px solid ;
+}

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery/jquery.js"></script>
+    <link rel="stylesheet" href="jquery/jquery.mobile-1.4.5.css">
+    <script src="jquery/jquery.mobile-1.4.5.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+
+
+
+<div data-role="page" class="ui-body-a" id="welcome">
+     <img id="logo" src="img/logo1.png" height="366" width="928"/>
+    <a href="#regist" class="ui-btn" id="rb">Зарегистрироваться</a>
+    <a href="#come" class="ui-btn" id="ue">Войти</a>
+
+
+    <img id="diss" src="img/discuss.png" height="831" width="1920"/></div>
+
+
+
+
+
+
+
+
+<div data-role="page" class="ui-body-a" id="regist">
+
+      <h1 id="logr">Регистрация</h1>
+      <input type="text" placeholder="имя" id="name">
+      <input type="text" placeholder="фамилия" id="sur">
+       <input type="text" placeholder="возраст" id="years">
+    <select name="class" id="city" data-placeholder="Выберите город">
+        <option value="class">Выберите город</option>
+        <option value="class">Астана</option>
+        <option value="class">Алматы</option>
+        <option value="class">Актау</option>
+        <option value="class">Актобе</option>
+        <option value="class">Атырау</option>
+        <option value="class">Байконур</option>
+        <option value="class">Караганда</option>
+        <option value="class">Кокшетау</option>
+        <option value="class">Павлодар</option>
+        <option value="class">Петропавловск</option>
+        <option value="class">Семей</option>
+        <option value="class">Тараз</option>
+        <option value="class">Уральск</option>
+        <option value="class">Усть-Каменогорск</option>
+        <option value="class">Шымкент</option>
+    </select>
+
+
+
+    <select name="class" id="pol" data-placeholder="Выберите пол">
+            <option value="class">Выберите пол</option>
+        <option value="class">Мужской</option>
+        <option value="class">Женский</option>
+    </select>
+         <a href="#avtor" class="ui-btn" id="butav">Перейти к авторизации</a>
+    <img id="diss1" src="img/discuss.png" height="831" width="1920"/></div>
+</div>
+
+
+
+
+
+
+
+
+
+<div data-role="page" class="ui-body-a" id="avtor">
+    <h2 id="avvv">Авторизация</h2>
+      <input type="text" placeholder="Введите номер телефона" id="no">
+      <input type="text" placeholder="Придумайте пароль" id="pss">
+      <a href="#mainpage" class="ui-btn" id="goto">Войти</a>
+</div>
+
+
+
+
+
+
+
+
+
+<div data-role="page" class="ui-body-a" id="come">
+   <h1 id="dp">Вход</h1>
+    <p id="vsd">Введите свои данные</p>
+        <input type="text" placeholder="Номер телефона" id="email">
+        <input type="text" placeholder="пароль" id="pwb">
+        <a href="#mainpage" class="ui-btn" id="bbb">Войти</a>
+</div>
+
+
+
+
+
+
+
+<div data-role="page" class="ui-body-b" id="mainpage">
+
+
+    <div data-role="panel" id="panel" data-display="overlay">
+        <div data-role="controlgroup">
+         <p>КАТЕГОРИИ</p>
+            <a href="#" class="ui-btn">Встречи</a>
+            <a href="#" class="ui-btn">Здоровье и красота</a>
+            <a href="#" class="ui-btn">Бизнес</a>
+            <a href="#" class="ui-btn">Кино и сериалы</a>
+            <a href="#" class="ui-btn">Музыка</a>
+            <a href="#" class="ui-btn">Знакомства</a>
+            <a href="#" class="ui-btn">Хобби</a>
+            <a href="#" class="ui-btn">Туризм</a>
+            <a href="#" class="ui-btn">Кулинария</a>
+            <a href="#" class="ui-btn">Психология</a>
+        </div>
+    </div>
+    <div data-role="header">
+        <a href="#panel" class="ui-btn ui-btn-icon-notext ui-icon-bars"></a>
+        <h1>QueryKZ</h1>
+        <div data-role="header">
+        </div>
+        <div data-role="header" class="header" id="header">
+            <input type="text" placeholder="Поиск" id="search">
+        </div>
+        <div role="main">
+            <div id="slider">
+                <ul id="list">
+                    <li class="slide">Slide 1
+						<h3>Test</h3>
+					</li>
+                    <li class="slide">Slide 2</li>
+
+                </ul>
+            </div>
+        </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div  data-role="page" id="chat">
+
+
+        <a href="#eeexit" data-rel="popup" class="ui-btn ui-icon-back ui-btn-icon-left"></a>
+
+        <div data-role="popup" id="eeexit" role="main">
+            <h4>Подтвердите действие</h4>
+            <a href="#main" class="ui-btn">Выйти</a>
+            <a href="#chat" class="ui-btn">Отмена</a>
+        </div>
+
+        <div role="main">
+            <ul data-role="listview" id="list">
+            </ul>
+        </div>
+        <div id="form" class="ui-bar-inherit">
+            <input type="text" placeholder="Сообщения" id="msg" maxlength="100">
+            <input type="button" id="send" value="Ok">
+            >
+        </div>
+
+
+
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div data-role="page" class="ui-body-b" id="create">
+    <input type="text" placeholder="Тема форума">
+    <input type="text" placeholder="Описание" id="inf" maxlength="100">
+    <input type="text" placeholder="Возраст">
+    <select name="class" id="city" data-placeholder="Выберите город">
+        <option value="class">Выберите город</option>
+        <option value="class">Астана</option>
+        <option value="class">Алматы</option>
+        <option value="class">Актау</option>
+        <option value="class">Актобе</option>
+        <option value="class">Атырау</option>
+        <option value="class">Байконур</option>
+        <option value="class">Караганда</option>
+        <option value="class">Кокшетау</option>
+        <option value="class">Павлодар</option>
+        <option value="class">Петропавловск</option>
+        <option value="class">Семей</option>
+        <option value="class">Тараз</option>
+        <option value="class">Уральск</option>
+        <option value="class">Усть-Каменогорск</option>
+        <option value="class">Шымкент</option>
+    </select>
+    <select name="class" id="kategory" data-placeholder="Выберите категорию">
+        <option value="class">Выберите категорию</option>
+        <option value="class">Встречи</option>
+        <option value="class">Здоровье и красота</option>
+        <option value="class">Бизнес</option>
+        <option value="class">Кино и сериалы</option>
+        <option value="class">Музыка</option>
+        <option value="class">Знакомства</option>
+        <option value="class">Хобби</option>
+        <option value="class">Туризм</option>
+        <option value="class">Кулинария</option>
+        <option value="class">Психология</option>
+    </select>
+
+    <a href="" class="ui-btn">Создать форум</a>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
