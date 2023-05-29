@@ -1,0 +1,80 @@
+
+#query {
+    width: 100%;
+    height: 200px;
+}
+#bregist  {
+    height: 40px;
+    background-color: #295b8e;
+    color: #DEDEDE;
+    margin-top: 20px;
+    font-family: "Times New Roman";
+    font-size: 15pt;
+}
+#bcome {
+    color: #295b8e;
+    border: solid 0.5px #295b8e;
+}
+#problem {
+    height: 200px;
+    width: 150px;
+}
+#ready {
+    height: 170px;
+    width: 100px;
+    margin-top: 20px;
+}
+
+#lampa {
+
+    height: 165px;
+    width: 90px;
+    margin-left:-30px;
+    margin-top: -20px;
+}
+#logr {
+
+    font-family: Tahoma;
+    margin-left: 20px;}
+#name {
+    border: black 0.5px solid ;
+}
+#sur{
+    border: black 0.5px solid ;
+}
+#years { border: black 0.5px solid ;
+}
+#city {
+    border: black 0.5px solid ;
+}
+#pol {
+    border: black 0.5px solid ;
+}
+#phh {
+    margin-top: 100px;
+}
+#avvv {
+    font-family: Tahoma;
+    margin-left: 20px;
+    margin-top: 60px;
+    font-size: 28pt;
+}
+#goto {
+    color: #295b8e;
+    border: solid 0.5px #295b8e;
+}
+#dp {
+    font-size: xx-large;
+    margin-left: 20px;
+    margin-top: 30px;}
+
+#vsd {
+    margin-top: 90px;
+    font-size: large;
+    margin-left: 15px;}
+#class {
+    margin-top: -20px;
+}
+#qqq {
+    font-size: 15pt;
+}
